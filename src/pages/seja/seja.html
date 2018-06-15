@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Pretty Little Liars</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-image">
+        <ion-list>
+          <ion-item style="border-top: none;
+          font-size: 14px; margin-top: 10px; background: none; border-bottom: none;
+           box-shadow: none; color:white" (click)="getId(d.id)" *ngFor="let d of dados">
+              <ion-avatar item-start>
+            <img src="{{ d.img }}">
+            </ion-avatar>
+            <h2>{{ d.nome }}</h2>
+          	<h3>{{ d.episodios }} episódios</h3>
+          	<h3>{{ d.datalanc }}</h3>
+          	<h3>Clique e veja a sinopse</h3>
+          </ion-item>
+        </ion-list>      
+  </ion-content>

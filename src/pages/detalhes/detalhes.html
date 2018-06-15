@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-card> 
+      <img src="{{deta.img}}"/>
+        <ion-card-content>
+          <ion-card-title>
+            {{ deta.nome }}
+            <h3>{{ deta.episodes }}</h3>
+          </ion-card-title>
+          <p>
+            <!-- <button (click)="roda();">Cantar Junto</button>
+            <button (click)="parar();">Parar</button> -->
+            {{ deta.sinopse }}
+          </p>
+        </ion-card-content>
+      </ion-card>
+</ion-content>
